@@ -1,0 +1,8 @@
+azure-functions
+pyodbc
+google-cloud-storage
+google-cloud-bigquery
+google-api-core
+google-auth
+azure-identity
+azure-keyvault-secrets
