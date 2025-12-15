@@ -62,7 +62,9 @@ def run_full_load_pipeline(sql_id, sql_pwd, sql_server, sql_db, sql_schema, sql_
             f"PWD={sql_pwd};" # Use the actual password string here
             f"Encrypt=yes;"
             f"TrustServerCertificate=no;"
+            f"LoginTimeout=60;"
         )
+
         conn = pyodbc.connect(conn_string)
         cursor = conn.cursor()
         
